@@ -1,0 +1,1 @@
+from math import cos, radians, sin, tan, tanh, cosh, sinh, acos, asin, atan, degrees
