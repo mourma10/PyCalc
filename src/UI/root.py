@@ -1,12 +1,11 @@
 # -*-coding:UTF-8-*
 
 from .__init__ import *
-from .buttons import Buttons
-# from src.Analyseur import Analyseur
+from .buttons import *
 
 # **********************************************
 # Dans cette classe Root on gere tout ce qui   *
-# relatif a la fenetre de la calculatrice      *
+# est relatif a la fenetre de la calculatrice  *
 # **********************************************
 
 
@@ -41,11 +40,8 @@ class Root:
 
     # *****************************************************
     # Gestion de la saisie et des zones                   *
-    # d'affichages de la calculatrice.                    *
-    # A noter que la saisie et l'evaluation se font au    *
-    # meme moment                                         *
+    # d'affichages de la calculatrice.                    *                                       *
     # *****************************************************
-
     def putzones(self, text):
         self.analyseur.eval_expression(self, text)
         self.zone_result = Button(self.window, command="", width=140, relief="flat", bg="#edd",
@@ -64,7 +60,6 @@ class Root:
     # Redimensionnement de la fenetre          *
     # suivant le mode basique ou scientifique  *
     # ******************************************
-
     def changerootmode(self, dimx, title, button_mode):
         self.canvas.delete("all")
         self.dimx = dimx
@@ -81,7 +76,6 @@ class Root:
     # Gestion des evenements            *
     # du clavier                        *
     # ***********************************
-
     def keyboard_event(self, event):
         key = str()
         number = "1234567890"

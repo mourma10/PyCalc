@@ -1,6 +1,6 @@
 try:
-    from Tkinter import Tk, Canvas, Button
+    from Tkinter import Tk, Canvas
 except ImportError:
-    from tkinter import Tk, Canvas, Button
+    from tkinter import Tk, Canvas
 finally:
     from src.Analyseur.analyseur import Analyseur

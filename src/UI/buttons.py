@@ -1,5 +1,8 @@
 # -*-coding:UTF-8-*
-from .__init__ import Button
+try:
+    from Tkinter import Button
+except ImportError:
+    from tkinter import Button
 
 # **************************************
 # Les Boutons sont encapsulés dans     *
